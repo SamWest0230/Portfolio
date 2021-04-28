@@ -1,0 +1,35 @@
+@use '../partials/resets.scss' as *;
+@use '../partials/variables.scss' as *;
+@use '../partials/mixins.scss' as *;
+.about{
+    border-top: 1px solid $cp-white;
+    border-bottom: 1px solid $cp-white;
+    color: $cp-white;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        align-self: center;
+        margin: 2rem 0 1rem 0;
+    }
+    &__container{
+        &--info{
+            color: $cp-white;
+        }
+        &--pic{
+            display: none;
+            opacity: .9;
+        width: 100px;
+        }
+    }
+
+    &__skills{
+        &--title{
+            margin: 1rem 0;
+        }
+        &--pic{
+            padding: .5rem;
+            width: 60px;
+            height: 50px;
+        }
+    }
+}

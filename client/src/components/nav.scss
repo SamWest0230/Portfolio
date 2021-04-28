@@ -1,0 +1,33 @@
+@use '../partials/resets.scss' as *;
+@use '../partials/variables.scss' as *;
+@use '../partials/mixins.scss' as *;
+
+.nav{
+    background-color: $cp-black;
+    color: $cp-white;
+    display: flex;
+    flex-direction: column;
+
+    &__burger{
+        margin: 1rem 1rem;
+        width: 2rem;
+        align-self: flex-end;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+.show{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+
+    &__link{
+        color: $cp-white;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,21 @@
+@use '../partials/resets.scss' as *;
+@use '../partials/variables.scss' as *;
+@use '../partials/mixins.scss' as *;
+
+.contact{
+    color: $cp-white;
+    padding: 1rem 0;
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+        &--label{
+            padding: .5rem 0;
+        }
+
+        &--input{
+            padding: .2rem 0;
+        }
+    }
+}
