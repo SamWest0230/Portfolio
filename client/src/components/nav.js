@@ -7,19 +7,20 @@ class Nav extends React.Component{
 state = {
     nav: false
 }
-    showNav = () =>{
+ showNav = () =>{
         if (this.state.nav === false){
         this.setState({
             nav: true
         })
     }if(this.state.nav === true){
-            document.getElementById('menu').classList.remove('show')
-            document.getElementById('menu').classList.add('menu')
-        this.setState({
-            nav: false
-        })
+        document.getElementById('menu').classList.remove('show')
+        document.getElementById('menu').classList.add('menu')
+         this.setState({
+        nav: false
+        }) 
+        }
     }
-    }
+   
 
     render(){
         if(this.state.nav === true){

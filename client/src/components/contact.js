@@ -12,10 +12,12 @@ function Contact () {
             <h1 className='contact__title'>Contact Me</h1>
             <h2 className='contact__info'></h2>
             <div className='contact__table'>
-               
+
                 <div className='contact__table--social'>
                     <h3 className='contact__table--social--name'>Email</h3>
+                    <a href={"mailto:name@domain"}>
                     <img src={mail} className='contact__table--social--icon' />
+                    </a>
                 </div>
                 <p className='email'>samwest0230@gmail.com</p>
                 

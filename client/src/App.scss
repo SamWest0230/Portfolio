@@ -5,6 +5,9 @@
 .app{
     background-color: $cp-black;   
     padding: $mobile-padding;
+    @include tablet{
+        padding: $tablet-padding;
+    }
 }
 .hero{
     display: flex;

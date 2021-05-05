@@ -11,6 +11,12 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
     &__card{
         color: $cp-white;
@@ -22,6 +28,18 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        @include tablet{
+            width: 49%;
+            padding: 1rem .5rem;
+            border: 1px solid rgba(75, 74, 74, 0.4);
+            box-shadow: 5px 5px 8px rgba(75, 74, 74, .2);
+
+            &:hover{
+                border: 1.5px solid rgba(75, 74, 74, 0.4);
+                box-shadow: 10px 10px 5px rgba(75, 74, 74, .2); 
+            }
+        }
 
         &--title{
             margin-bottom: 1.5rem;
@@ -41,10 +59,16 @@
             height: 110px;
         }
         &--content{
+            line-height: 1.3;
             margin-top: 1rem;
             padding: .5rem 0;
-            border-top: 1px solid rgba(230, 230, 230, 0.3);
-            border-bottom: 1px solid rgba(230, 230, 230, 0.3);
+            border-top: 1px solid rgba(75, 74, 74, 0.4);
+            border-bottom: 1px solid rgba(75, 74, 74, 0.4);
+
+            @include tablet{
+                border: none;
+                width: 100%;
+            }
         }
     }
 }
