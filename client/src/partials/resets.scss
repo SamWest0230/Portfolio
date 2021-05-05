@@ -10,9 +10,11 @@
 }
 
 a{
+    font-family: 'Montserrat';
+    font-weight: 300;
     text-decoration: none;
     &:visited{
-        color: $cp-black;
+        color: $cp-white;
     }
 }
 
@@ -34,6 +36,7 @@ p{
     font-family: 'Montserrat';
     font-weight: 200;
 }
+
 .hr{
     border-top: 1px solid $cp-white;
 }

@@ -13,7 +13,7 @@ import { Route, Link } from 'react-router-dom'
 
 function About() {
     return (
-        <section className="about">
+        <section className="about" id='about'>
             <h1 className='about__title'>About Me</h1>
             <div className='about__container'>
             <p className='about__container--info'>A full-stack developer located in Toronto. With a passion for creativity within web design and the challenge
