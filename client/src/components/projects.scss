@@ -7,6 +7,9 @@
     text-align: center;
     padding: 2rem 0;
     border-bottom: 1px solid $cp-white;
+    @include desktop{
+        padding: 5rem 0;
+     }
     &__container{
         display: flex;
         flex-direction: column;
@@ -17,6 +20,10 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        @include desktop{
+            padding: 2rem 0;
+         }
+      
     }
     &__card{
         color: $cp-white;
@@ -48,6 +55,11 @@
         &--img{
             width: 15rem;
             height: 12.5rem;
+
+            @include desktop{
+                width: 20rem;
+                height: 15rem;
+            }
         }
         &--hack{
             display: flex;

@@ -25,6 +25,9 @@
     @include tablet{
         padding: $tablet-padding;
     }
+    @include tablet{
+      padding: $desktop-padding;
+  }
 }
 .hero{
     display: flex;
@@ -45,6 +48,9 @@
         @include tablet{
             margin: 2rem 0 10rem 0;
         }
+        @include desktop{
+          margin: 2rem 0 20rem 0;
+      }
 
         &--name{
             padding: 1rem 0;
@@ -52,6 +58,14 @@
             font-weight: 400;
             font-size: 3.5rem;
             align-self: center;
+
+            @include tablet{
+              font-size: 4rem;
+            }
+            @include desktop{
+              padding: 1.5rem 0;
+              font-size: 6rem;
+            }
         }
 
         &--pin{
@@ -62,6 +76,12 @@
             animation-name: bounce;
             animation-fill-mode: both;
             animation-duration: 1s;
+
+            @include desktop{
+              margin: 1.5rem 0;
+              width: 5rem;
+              height: 3rem;
+            }
         }
          
     }

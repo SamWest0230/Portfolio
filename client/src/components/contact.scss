@@ -6,6 +6,9 @@
     color: $cp-white;
     padding: 2rem 0;
     text-align: center;
+    @include desktop{
+        padding: 5rem 0;
+     }
 
         &__title{
             margin-bottom: 2rem;
